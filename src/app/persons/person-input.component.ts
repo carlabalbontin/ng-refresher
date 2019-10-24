@@ -7,7 +7,11 @@ import { Component } from '@angular/core';
 })
 
 export class PersonInputComponent {
-  onCreatePerson(personName: string){
-    console.log('created person: ' + personName);
+  enteredPersonName = '';
+
+  onCreatePerson(){
+    console.log('created person: ' + this.enteredPersonName);
+    this.enteredPersonName = '';
   }
+
 }
