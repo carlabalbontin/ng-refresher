@@ -7,5 +7,4 @@ import { Component, Input } from '@angular/core';
 
 export class PersonsComponent {
   @Input() personList: string[];
-  //@Input sets bindable property
 }
